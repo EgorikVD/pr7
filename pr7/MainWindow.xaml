@@ -1,0 +1,22 @@
+﻿<Window x:Class="pr7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pr7"
+        mc:Ignorable="d"
+        Title="Управление сотрудниками" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="goBackbutton" Content="Назад" Click="goBackbutton_Click" HorizontalAlignment="Left" Width="100" Margin="10"/>
+        <Button x:Name="Forward" Content="Далее" Click="Forward_Click" HorizontalAlignment="Right" Width="100" Margin="10" />
+
+        <Frame x:Name="Frm" NavigationUIVisibility="Hidden" Grid.Column="0" Grid.Row="1"/>
+    </Grid>
+</Window>
